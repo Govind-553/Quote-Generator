@@ -49,10 +49,14 @@ body {
     line-height: 1.4;
 }
 
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"';
+}
+
 .quote-box span {
-    display: none;
+    display: box;
     margin-top: 10px;
-    float: none;
+    float: right;
     text-align: right;
     position: relative;
 }
